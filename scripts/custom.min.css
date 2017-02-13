@@ -1,0 +1,175 @@
+.parallax {
+    background: url(../img/cidade.jpg) center no-repeat fixed;
+    min-height: 600px;
+    background-size: cover
+}
+
+.secao{
+    padding-top: 70px;
+    padding-bottom: 40px;
+}
+p{
+    border-left: solid 4px #58585b;
+    padding-left: 10px;
+    line-height: 1.7em;
+}
+
+#servicos .col-md-8{
+    padding-top: 20px; 
+}
+
+#servicos .row{
+    padding-top: 30px; 
+}
+.col-md-8 ul{
+    /*border-left: solid 4px #58585b;*/
+    padding-left: 5px;
+    list-style-type: none;
+}
+
+.col-md-8 ul li{
+    position: relative;
+    padding: 5px 0 10px 30px;
+    color: #55585b;
+    line-height: 1.25em;
+}
+
+.col-md-8 ul li::after{
+    border: solid 4px #c3c3c3;
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    width: 5px;
+    content: "";
+    height: 5px;
+    display: block;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.mais-sobre{
+    padding: 4% 0% 0% 0%;
+}
+
+.mais-sobre div{
+    padding: 0% 2% 0% 2%;
+}
+
+#servicos, #contato{
+    background-color: #EAECEE;
+}
+
+.conheca-mais{
+    background-color: #09c;
+    color: white;
+}
+.img-responsive {
+    height:100%;
+    width:100%;
+}
+
+
+@media screen and (min-width:768px) {
+    #custom-nav {
+        opacity: .9;
+        border: 0;
+        box-shadow: none;
+        z-index: 999;
+        padding: 0;
+        background-color: transparent;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-transition: background .5s ease-in-out, opacity .5s ease;
+        -moz-transition: background .5s ease-in-out, opacity .5s ease;
+        transition: background .5s ease-in-out, opacity .5s ease
+    }
+    #custom-nav ul li a span {
+        font-weight: bolder;
+        color: #fff;
+        font-size: 20px
+    }
+    #custom-nav .container {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        -webkit-transition: padding-top .5s ease, padding-bottom .5s ease;
+        -moz-transition: padding-top .5s ease, padding-bottom .5s ease;
+        transition: padding-top .5s ease, padding-top .5s ease, padding-bottom .5s ease
+    }
+    #custom-nav .tamanho-container {
+        padding-top: 10px;
+        padding-bottom: 10px
+    }
+    #custom-nav.affix {
+        top: 0;
+        min-width: 100%;
+        background-color: #f8f8f8
+    }
+    #custom-nav.affix ul li a span {
+        color: grey
+    }
+    .navbar-default .navbar-nav>.active>a:focus {
+        background-color: transparent;
+        border-bottom: 3px solid #09c
+    }
+    .navbar-default .navbar-nav a:hover {
+        background-color: transparent;
+        border-bottom: 3px solid #EB5A49
+    }
+    .navbar-default .navbar-nav>.active>a,
+    .navbar-default .navbar-nav>.active>a:hover {
+        background-color: transparent;
+        border-bottom: 3px solid #09c
+    }
+}
+
+.carousel-content {
+    color: #eee;
+    font-size: 30px;
+    align-items: center
+}
+
+#text-carousel {
+    width: 100%;
+    height: auto;
+    padding: 50px
+}
+
+.btn-success {
+    color: #449D44;
+    font-size: 20px;
+    background: 0 0;
+    padding: 12px 22px
+}
+
+.btn-sucess:focus {
+    outline: 0
+}
+
+@media screen and (max-width:767px) {
+    .parallax {
+        min-height: 300px;
+        width: 100%
+    }
+    body {
+        padding-top: 50px
+    }
+    .navbar-fixed-top {
+        z-index: 999
+    }
+    .carousel-content {
+        color: #eee;
+        font-size: 18px;
+        align-items: center
+    }
+    .col-xs-offset-3 {
+        padding: 0 0 0 15px;
+        width: 150px
+    }
+}
+
+@media screen and (min-width:1535px) {
+    .parallax {
+        min-height: 800px;
+        width: 100%
+    }
+}
