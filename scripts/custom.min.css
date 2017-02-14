@@ -5,8 +5,7 @@
 }
 
 .secao{
-    padding-top: 70px;
-    padding-bottom: 40px;
+    padding: 70px 0px 70px 0px;
 }
 p{
     border-left: solid 4px #58585b;
@@ -17,6 +16,7 @@ p{
 #servicos .col-md-8{
     padding-top: 20px; 
 }
+
 
 #servicos .row{
     padding-top: 30px; 
@@ -55,10 +55,20 @@ p{
     padding: 0% 2% 0% 2%;
 }
 
-#servicos, #contato{
+/*#valores, #servicos, #contato{*/
+#valores, #servicos, #footer{
     background-color: #EAECEE;
 }
-
+#footer{
+    
+}
+#nossa-politica{
+    color: #fff;
+    background-color: #4F4F4F;
+}
+#nossa-politica .container div p{
+        border-left: 0px;
+}
 .conheca-mais{
     background-color: #09c;
     color: white;
