@@ -7,7 +7,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="shortcut icon" href="#"/>
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
 
 	<link rel="stylesheet" href="scripts/bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" href="scripts/custom.min.css">
@@ -29,7 +29,7 @@
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-top-collapse">
 					<span class="fa fa-bars"></span></button>
 
-					<a href="#inicio" class="navbar-brand minilogo"><img src="#"></a>
+					<a href="#inicio" class="navbar-brand"><img src="img/perfil-lw.png" style="height:200%;"/></a>
 				</div>
 
 				<div class="collapse navbar-collapse navbar-top-collapse auto">
@@ -255,30 +255,33 @@
 		<div class="container">
 
 			<div class="row">
-				<div class="col-md-6">
-                    <form name="sentMessage" id="contactForm" novalidate>
-                        <div class="row">
-							<h3 class="text-center text-muted">Fale conosco!</h3>
-							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Seu Nome" id="name" required data-validation-required-message="Por favor insira seu nome.">
-								<p class="help-block text-danger"></p>
+				<form method="post" action="http://formspree.io/contato@lw-engenharia.com">
+					<div class="col-md-6">
+						<form name="sentMessage" id="contactForm" novalidate>
+							<div class="row">
+								<h3 class="text-center text-muted">Fale conosco!</h3>
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Seu Nome" id="nome" name="nome" required data-validation-required-message="Por favor insira seu nome.">
+									<p class="help-block text-danger"></p>
+								</div>
+								<div class="form-group">
+									<input type="email" class="form-control" placeholder="Seu e-mail" id="email" name="email" required data-validation-required-message="Por favor insira seu E-mail.">
+									<p class="help-block text-danger"></p>
+								</div>
+								<div class="form-group">
+									<textarea style="height:80px" class="form-control" placeholder="Sua Mensagem" id="message" name="mensagem" required data-validation-required-message="Por favor insira sua mensagem."></textarea>
+									<p class="help-block text-danger"></p>
+								</div>
+								<div class="clearfix"></div>
+								<div class="col-lg-12 text-center">
+									<div id="success"></div>
+									<button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+								</div>
 							</div>
-							<div class="form-group">
-								<input type="email" class="form-control" placeholder="Seu e-mail" id="email" required data-validation-required-message="Por favor insira seu E-mail.">
-								<p class="help-block text-danger"></p>
-							</div>
-							<div class="form-group">
-								<textarea style="height:80px" class="form-control" placeholder="Sua Mensagem" id="message" required data-validation-required-message="Por favor insira sua mensagem."></textarea>
-								<p class="help-block text-danger"></p>
-							</div>
-                            <div class="clearfix"></div>
-                            <div class="col-lg-12 text-center">
-                                <div id="success"></div>
-                                <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
-                            </div>
-                        </div>
-                    </form>
-				</div>
+						</form>
+					</div>
+				</form>
+					
 				<div class="col-md-offset-2 col-md-4 text-muted">
 					<h2 class="text-center">Nossos contatos</h3>
 					<h4>E-mail: contato@lw-engenharia.com</h4>
@@ -295,10 +298,24 @@
 	</div>
 
 	<div class="footer" id="footer">
-		<div class="container">
+		<h5 class="text-center">
+			<a href="#">
+				<img src="img/logotipo-lwEngenharia.png" style="max-height:8em;" />
+			</a>
+		</h5>
+		<ul class="text-center list-inline">
+			<li>contato@lw-engenharia.com</li>
+			<li>|</li>
+			<li>(31) 3789-1466</li>
+			<li>|</li>
+			<li>(31) 99322-4348</li>
+			<li>|</li>
+			<li>(31) 99262-4341</li>
+		</ul>
+		<div class="sub-footer">
 			<div class="row">
 				<div class="rodape col-md-12 text-center">
-					<span>Desenvolvido por </span><a href="www.startapi.com.br">StartAPI</a><span> - LW-Engenharia © 2017</span>
+					<span>Desenvolvido por </span><a href="www.startapi.com.br"  style="color: #fff; text-decoration: none;">StartAPI</a><span> - LW-Engenharia © 2017</span>
 				</div>
 			</div>
 		</div>

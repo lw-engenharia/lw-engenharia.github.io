@@ -13,6 +13,8 @@ p{
     line-height: 1.7em;
 }
 
+
+
 #servicos .col-md-8{
     padding-top: 20px; 
 }
@@ -56,11 +58,30 @@ p{
 }
 
 /*#valores, #servicos, #contato{*/
-#valores, #servicos, #footer{
+#valores, #servicos{
     background-color: #EAECEE;
 }
 #footer{
-    
+    background-color: #3a414c;
+    color: #fff;
+    padding: 20px 0px 0px 0px;
+}
+
+footer ul li {
+    font-size: 0.810em;
+    position: relative;
+    list-style-image: none;
+    list-style-type: none;
+    margin-left: 0;
+    white-space: nowrap;
+    padding-left: 0.857em;
+    padding-right: 0.857em;
+}
+.sub-footer{
+    min-height: 5.238em;
+    position: relative;
+    background-color: #4b515b;
+    background-image: -webkit-linear-gradient(top, #4b515b 0%,#4b515b 45%,#5d626a 45%,#5d626a 78%,#6e7379 78%,#6e7379 100%);
 }
 #nossa-politica{
     color: #fff;
